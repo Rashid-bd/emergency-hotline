@@ -13,11 +13,53 @@
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
-    <!-- DaisyUI -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    
+    <header>
+      <nav class="flex justify-between items-center px-6 py-4 bg-white">
+        <div class="flex justify-between items-center gap-3">
+          <img src="./assets/logo.png" alt="" class="h-12 w-12" />
+          <h3 class="font-extrabold text-2xl leading-none text-[#006747]">Emergency <br />Service</h3>
+        </div>
+        <div class="flex justify-between items-center gap-10">
+          <div class="flex justify-between items-center font-bold bg-[#41FF6B]/10 px-4 py-1 rounded-3xl gap-2">
+            <p>0</p>
+            <img src="./assets/heart.png" alt="" class="h-8 w-8" />
+          </div>
+          <div class="flex justify-between items-center font-bold bg-[#41FF6B]/10 px-4 py-1 rounded-3xl gap-2">
+            <p>100</p>
+            <img src="./assets/coin.png" alt="" class="h-8 w-8" />
+          </div>
+          <div class="text-white text-lg font-bold bg-[#00A63E] px-4 py-1 rounded-3xl">
+            <p><span>2</span> copy</p>
+          </div>
+        </div>
+      </nav>
+      <div class="bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] text-white text-center py-6">
+        <img src="./assets/logo-dark.png" alt="" class="mx-auto h-16 w-16" >
+        <h1 class="text-3xl font-extrabold mt-2">Emergency Service Directory</h1>
+        <p class="text-sm font-medium tracking-wide mt-2">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+      </div>
+    </header>
+    <main class="bg-[#41FF6B]/10 h-96">
+        <div class="w-[300px] bg-white p-6 rounded-lg shadow-md">
+            <div class="flex justify-between items-center">
+                <img src="./assets/police.png" alt="" class="bg-[#DFEFFF] w-16 h-16 p-2 rounded-2xl">
+                <i class="fa-regular fa-heart text-2xl"></i>
+            </div>
+            <div>
+                <h2>Police Helpline Number</h2>
+                <p>Police</p>
+            </div>
+            <div>
+                <h1>999</h1>
+                <p>Police</p>
+            </div>
+            <div class="flex gap-3">
+                <button><i class="fa-regular fa-copy"></i> Copy</button>
+                <button><i class="fa-solid fa-phone"></i> Call</button>
+            </div>
+        </div>
+    </main>
   </body>
 </html>
