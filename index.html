@@ -15,26 +15,31 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body class="font-[Inter]">
+    <nav class="flex justify-between items-center px-6 py-4 bg-white sticky top-0 z-50">
+      <!-- logo -->
+      <div class="flex justify-between items-center gap-3">
+        <img src="./assets/logo.png" alt="" class="h-12 w-12" />
+        <h2 class="font-extrabold text-xl leading-tight text-[#006747]">Emergency <br />Service</h2>
+      </div>
+      <!-- heart -->
+      <div class="flex justify-between items-center gap-10">
+        <div class="flex justify-between items-center font-bold bg-[#41FF6B]/10 px-4 py-1 rounded-3xl gap-2">
+          <p id="like-count">0</p>
+          <img src="./assets/heart.png" alt="" class="h-8 w-8" />
+        </div>
+        <!-- coin -->
+        <div class="flex justify-between items-center font-bold bg-[#41FF6B]/10 px-4 py-1 rounded-3xl gap-2">
+          <p id="coin">100</p>
+          <img src="./assets/coin.png" alt="" class="h-8 w-8" />
+        </div>
+        <!-- copy -->
+        <div class="text-white text-lg font-bold bg-[#00A63E] px-4 py-1 rounded-3xl">
+          <p><span id="copy-count">0</span> copy</p>
+        </div>
+      </div>
+    </nav>
     <header>
-      <nav class="flex justify-between items-center px-6 py-4 bg-white">
-        <div class="flex justify-between items-center gap-3">
-          <img src="./assets/logo.png" alt="" class="h-12 w-12" />
-          <h2 class="font-extrabold text-xl leading-tight text-[#006747]">Emergency <br />Service</h2>
-        </div>
-        <div class="flex justify-between items-center gap-10">
-          <div class="flex justify-between items-center font-bold bg-[#41FF6B]/10 px-4 py-1 rounded-3xl gap-2">
-            <p>0</p>
-            <img src="./assets/heart.png" alt="" class="h-8 w-8" />
-          </div>
-          <div class="flex justify-between items-center font-bold bg-[#41FF6B]/10 px-4 py-1 rounded-3xl gap-2">
-            <p>100</p>
-            <img src="./assets/coin.png" alt="" class="h-8 w-8" />
-          </div>
-          <div class="text-white text-lg font-bold bg-[#00A63E] px-4 py-1 rounded-3xl">
-            <p><span>2</span> copy</p>
-          </div>
-        </div>
-      </nav>
+      <!-- hero -->
       <div class="bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] text-white text-center py-6">
         <img src="./assets/logo-dark.png" alt="" class="mx-auto h-16 w-16" />
         <h1 class="text-3xl font-extrabold mt-2">Emergency Service Directory</h1>
@@ -43,17 +48,17 @@
         </p>
       </div>
     </header>
-    <main class="bg-[#41FF6B]/10 p-6">
 
-        <!-- Cards -->
+    <!-- main -->
+    <main class="bg-[#41FF6B]/10 p-6">
+      <!-- Cards -->
       <div class="grid grid-cols-4 gap-5">
         <div class="col-span-3 grid grid-cols-3 gap-5">
-
-            <!-- natinal emergency -->
+          <!-- natinal emergency -->
           <div class="bg-white p-6 rounded-lg shadow-md">
             <div class="flex justify-between items-center">
               <img src="./assets/emergency.png" alt="" class="bg-[#FFE3E2] w-12 h-12 p-3 rounded-2xl" />
-              <i class="fa-regular fa-heart text-xl"></i>
+              <i id="emergency-heart" class="fa-regular fa-heart text-xl cursor-pointer like"></i>
             </div>
             <div class="mt-4">
               <h2 class="font-semibold text-lg">National Emergency Number</h2>
@@ -73,7 +78,7 @@
           <div class="bg-white p-6 rounded-lg shadow-md">
             <div class="flex justify-between items-center">
               <img src="./assets/police.png" alt="" class="bg-[#DFEFFF] w-14 h-14 p-3 rounded-2xl" />
-              <i class="fa-regular fa-heart text-xl"></i>
+              <i id="police-heart" class="fa-regular fa-heart text-xl cursor-pointer like"></i>
             </div>
             <div class="mt-4">
               <h2 class="font-semibold text-lg">Police Helpline Number</h2>
@@ -93,7 +98,7 @@
           <div class="bg-white p-6 rounded-lg shadow-md">
             <div class="flex justify-between items-center">
               <img src="./assets/fire-service.png" alt="" class="bg-[#FFE3E2] w-12 h-12 p-3 rounded-2xl" />
-              <i class="fa-regular fa-heart text-xl"></i>
+              <i id="fire-heart" class="fa-regular fa-heart text-xl cursor-pointer like"></i>
             </div>
             <div class="mt-4">
               <h2 class="font-semibold text-lg">Fire Service Number</h2>
@@ -113,7 +118,7 @@
           <div class="bg-white p-6 rounded-lg shadow-md">
             <div class="flex justify-between items-center">
               <img src="./assets/ambulance.png" alt="" class="bg-[#FFE3E2] w-12 h-12 p-3 rounded-2xl" />
-              <i class="fa-regular fa-heart text-xl"></i>
+              <i id="ambulance-heart" class="fa-regular fa-heart text-xl cursor-pointer like"></i>
             </div>
             <div class="mt-4">
               <h2 class="font-semibold text-lg">Ambulance Service</h2>
@@ -133,7 +138,7 @@
           <div class="bg-white p-6 rounded-lg shadow-md">
             <div class="flex justify-between items-center">
               <img src="./assets/emergency.png" alt="" class="bg-[#FFE3E2] w-12 h-12 p-3 rounded-2xl" />
-              <i class="fa-regular fa-heart text-xl"></i>
+              <i id="child-heart" class="fa-regular fa-heart text-xl cursor-pointer like"></i>
             </div>
             <div class="mt-4">
               <h2 class="font-semibold text-lg">Women & Child Helpline</h2>
@@ -153,7 +158,7 @@
           <div class="bg-white p-6 rounded-lg shadow-md">
             <div class="flex justify-between items-center">
               <img src="./assets/emergency.png" alt="" class="bg-[#FFE3E2] w-12 h-12 p-3 rounded-2xl" />
-              <i class="fa-regular fa-heart text-xl"></i>
+              <i id="anti-heart" class="fa-regular fa-heart text-xl cursor-pointer like"></i>
             </div>
             <div class="mt-4">
               <h2 class="font-semibold text-lg">Anti-Corruption Helpline</h2>
@@ -173,7 +178,7 @@
           <div class="bg-white p-6 rounded-lg shadow-md">
             <div class="flex justify-between items-center">
               <img src="./assets/emergency.png" alt="" class="bg-[#FFE3E2] w-12 h-12 p-3 rounded-2xl" />
-              <i class="fa-regular fa-heart text-xl"></i>
+              <i id="electricity-heart" class="fa-regular fa-heart text-xl cursor-pointer like"></i>
             </div>
             <div class="mt-4">
               <h2 class="font-semibold text-lg">Electricity Helpline</h2>
@@ -193,7 +198,7 @@
           <div class="bg-white p-6 rounded-lg shadow-md">
             <div class="flex justify-between items-center">
               <img src="./assets/emergency.png" alt="" class="bg-[#FFE3E2] w-12 h-12 p-3 rounded-2xl" />
-              <i class="fa-regular fa-heart text-xl"></i>
+              <i id="brac-heart" class="fa-regular fa-heart text-xl cursor-pointer like"></i>
             </div>
             <div class="mt-4">
               <h2 class="font-semibold text-lg">Brac Helpline</h2>
@@ -213,10 +218,10 @@
           <div class="bg-white p-6 rounded-lg shadow-md">
             <div class="flex justify-between items-center">
               <img src="./assets/emergency.png" alt="" class="bg-[#FFE3E2] w-12 h-12 p-3 rounded-2xl" />
-              <i class="fa-regular fa-heart text-xl"></i>
+              <i id="rail-heart" class="fa-regular fa-heart text-xl cursor-pointer like"></i>
             </div>
             <div class="mt-4">
-              <h2 class="font-semibold text-lg">Bangladesh Railway Helpline </h2>
+              <h2 class="font-semibold text-lg">Bangladesh Railway Helpline</h2>
               <p class="text-black/50 text-sm font-medium">Bangladesh Railway</p>
             </div>
             <div class="mt-4">
@@ -248,5 +253,6 @@
         </div>
       </div>
     </main>
+    <script src="./scripts/main.js"></script>
   </body>
 </html>
