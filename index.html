@@ -15,7 +15,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body class="font-[Inter]">
-    <nav class="flex justify-between items-center px-6 py-4 bg-white sticky top-0 z-50">
+    <nav class="flex justify-between px-6 py-4 bg-white sticky top-0 z-50">
       <!-- logo -->
       <div class="flex justify-between items-center gap-3">
         <img src="./assets/logo.png" alt="" class="h-12 w-12" />
@@ -34,7 +34,7 @@
         </div>
         <!-- copy -->
         <div class="text-white text-lg font-bold bg-[#00A63E] px-4 py-1 rounded-3xl">
-          <p><span id="copy-count">0</span> copy</p>
+          <p><span id="copy-count">0</span> Copy</p>
         </div>
       </div>
     </nav>
@@ -54,7 +54,7 @@
       <!-- Cards -->
       <div class="grid grid-cols-4 gap-5">
         <div class="col-span-3 grid grid-cols-3 gap-5">
-          <!-- natinal emergency -->
+          <!-- national emergency -->
           <div class="bg-white p-6 rounded-lg shadow-md">
             <div class="flex justify-between items-center">
               <img src="./assets/emergency.png" alt="" class="bg-[#FFE3E2] w-12 h-12 p-3 rounded-2xl" />
@@ -65,12 +65,13 @@
               <p class="text-black/50 text-sm font-medium">National Emergency</p>
             </div>
             <div class="mt-4">
-              <h2 class="font-bold text-xl">999</h2>
+              <h2 id="emergency-number" class="font-bold text-xl">999</h2>
               <p class="bg-gray-100 text-sm text-black/40 w-fit px-3 py-1 rounded-2xl">All</p>
             </div>
+            <!-- copy & call-->
             <div class="flex text-sm gap-3 mt-4">
-              <button class="flex-1 text-black/60 border-2 border-gray-300 rounded-md p-1"><i class="fa-regular fa-copy"></i> Copy</button>
-              <button class="flex-1 bg-green-500 rounded-md text-white p-1"><i class="fa-solid fa-phone"></i> Call</button>
+              <button id="emergency-copy" class="flex-1 text-black/60 border-2 border-gray-300 rounded-md p-1 cursor-pointer"><i class="fa-regular fa-copy"></i> Copy</button>
+              <button class="flex-1 bg-green-500 rounded-md text-white p-1 cursor-pointer"><i class="fa-solid fa-phone"></i> Call</button>
             </div>
           </div>
 
@@ -85,12 +86,13 @@
               <p class="text-black/50 text-sm font-medium">Police</p>
             </div>
             <div class="mt-4">
-              <h2 class="font-bold text-xl">999</h2>
+              <h2 id="police-number" class="font-bold text-xl">999</h2>
               <p class="bg-gray-100 text-sm text-black/40 w-fit px-3 py-1 rounded-2xl">Police</p>
             </div>
+            <!-- copy & call -->
             <div class="flex text-sm gap-3 mt-4">
-              <button class="flex-1 text-black/60 border-2 border-gray-300 rounded-md p-1"><i class="fa-regular fa-copy"></i> Copy</button>
-              <button class="flex-1 bg-green-500 rounded-md text-white p-1"><i class="fa-solid fa-phone"></i> Call</button>
+              <button id="police-copy" class="flex-1 text-black/60 border-2 border-gray-300 rounded-md p-1 cursor-pointer"><i class="fa-regular fa-copy"></i> Copy</button>
+              <button class="flex-1 bg-green-500 rounded-md text-white p-1 cursor-pointer"><i class="fa-solid fa-phone"></i> Call</button>
             </div>
           </div>
 
@@ -105,12 +107,13 @@
               <p class="text-black/50 text-sm font-medium">Fire Service</p>
             </div>
             <div class="mt-4">
-              <h2 class="font-bold text-xl">999</h2>
+              <h2 id="fire-number" class="font-bold text-xl">999</h2>
               <p class="bg-gray-100 text-sm text-black/40 w-fit px-3 py-1 rounded-2xl">Fire</p>
             </div>
+            <!-- copy & call -->
             <div class="flex text-sm gap-3 mt-4">
-              <button class="flex-1 text-black/60 border-2 border-gray-300 rounded-md p-1"><i class="fa-regular fa-copy"></i> Copy</button>
-              <button class="flex-1 bg-green-500 rounded-md text-white p-1"><i class="fa-solid fa-phone"></i> Call</button>
+              <button id="fire-copy" class="flex-1 text-black/60 border-2 border-gray-300 rounded-md p-1 cursor-pointer"><i class="fa-regular fa-copy"></i> Copy</button>
+              <button class="flex-1 bg-green-500 rounded-md text-white p-1 cursor-pointer"><i class="fa-solid fa-phone"></i> Call</button>
             </div>
           </div>
 
@@ -125,12 +128,13 @@
               <p class="text-black/50 text-sm font-medium">Ambulance</p>
             </div>
             <div class="mt-4">
-              <h2 class="font-bold text-xl">1994-999999</h2>
+              <h2 id="ambulance-number" class="font-bold text-xl">1994-999999</h2>
               <p class="bg-gray-100 text-sm text-black/40 w-fit px-3 py-1 rounded-2xl">Health</p>
             </div>
+            <!-- copy & call -->
             <div class="flex text-sm gap-3 mt-4">
-              <button class="flex-1 text-black/60 border-2 border-gray-300 rounded-md p-1"><i class="fa-regular fa-copy"></i> Copy</button>
-              <button class="flex-1 bg-green-500 rounded-md text-white p-1"><i class="fa-solid fa-phone"></i> Call</button>
+              <button id="ambulance-copy" class="flex-1 text-black/60 border-2 border-gray-300 rounded-md p-1 cursor-pointer"><i class="fa-regular fa-copy"></i> Copy</button>
+              <button class="flex-1 bg-green-500 rounded-md text-white p-1 cursor-pointer"><i class="fa-solid fa-phone"></i> Call</button>
             </div>
           </div>
 
@@ -145,12 +149,13 @@
               <p class="text-black/50 text-sm font-medium">Women & Child Helpline</p>
             </div>
             <div class="mt-4">
-              <h2 class="font-bold text-xl">109</h2>
+              <h2 id="child-number" class="font-bold text-xl">109</h2>
               <p class="bg-gray-100 text-sm text-black/40 w-fit px-3 py-1 rounded-2xl">Help</p>
             </div>
+            <!-- copy & call -->
             <div class="flex text-sm gap-3 mt-4">
-              <button class="flex-1 text-black/60 border-2 border-gray-300 rounded-md p-1"><i class="fa-regular fa-copy"></i> Copy</button>
-              <button class="flex-1 bg-green-500 rounded-md text-white p-1"><i class="fa-solid fa-phone"></i> Call</button>
+              <button id="child-copy" class="flex-1 text-black/60 border-2 border-gray-300 rounded-md p-1 cursor-pointer"><i class="fa-regular fa-copy"></i> Copy</button>
+              <button class="flex-1 bg-green-500 rounded-md text-white p-1 cursor-pointer"><i class="fa-solid fa-phone"></i> Call</button>
             </div>
           </div>
 
@@ -165,12 +170,13 @@
               <p class="text-black/50 text-sm font-medium">Anti-Corruption</p>
             </div>
             <div class="mt-4">
-              <h2 class="font-bold text-xl">106</h2>
+              <h2 id="anti-number" class="font-bold text-xl">106</h2>
               <p class="bg-gray-100 text-sm text-black/40 w-fit px-3 py-1 rounded-2xl">Govt.</p>
             </div>
+            <!-- copy & call -->
             <div class="flex text-sm gap-3 mt-4">
-              <button class="flex-1 text-black/60 border-2 border-gray-300 rounded-md p-1"><i class="fa-regular fa-copy"></i> Copy</button>
-              <button class="flex-1 bg-green-500 rounded-md text-white p-1"><i class="fa-solid fa-phone"></i> Call</button>
+              <button id="anti-copy" class="flex-1 text-black/60 border-2 border-gray-300 rounded-md p-1 cursor-pointer"><i class="fa-regular fa-copy"></i> Copy</button>
+              <button class="flex-1 bg-green-500 rounded-md text-white p-1 cursor-pointer"><i class="fa-solid fa-phone"></i> Call</button>
             </div>
           </div>
 
@@ -185,12 +191,13 @@
               <p class="text-black/50 text-sm font-medium">Electricity Outage</p>
             </div>
             <div class="mt-4">
-              <h2 class="font-bold text-xl">16216</h2>
+              <h2 id="electricity-number" class="font-bold text-xl">16216</h2>
               <p class="bg-gray-100 text-sm text-black/40 w-fit px-3 py-1 rounded-2xl">Electricity</p>
             </div>
+            <!-- copy & call -->
             <div class="flex text-sm gap-3 mt-4">
-              <button class="flex-1 text-black/60 border-2 border-gray-300 rounded-md p-1"><i class="fa-regular fa-copy"></i> Copy</button>
-              <button class="flex-1 bg-green-500 rounded-md text-white p-1"><i class="fa-solid fa-phone"></i> Call</button>
+              <button id="electricity-copy" class="flex-1 text-black/60 border-2 border-gray-300 rounded-md p-1 cursor-pointer"><i class="fa-regular fa-copy"></i> Copy</button>
+              <button class="flex-1 bg-green-500 rounded-md text-white p-1 cursor-pointer"><i class="fa-solid fa-phone"></i> Call</button>
             </div>
           </div>
 
@@ -205,12 +212,13 @@
               <p class="text-black/50 text-sm font-medium">Brac</p>
             </div>
             <div class="mt-4">
-              <h2 class="font-bold text-xl">16445</h2>
+              <h2 id="brac-number" class="font-bold text-xl">16445</h2>
               <p class="bg-gray-100 text-sm text-black/40 w-fit px-3 py-1 rounded-2xl">NGO</p>
             </div>
+            <!-- copy & call -->
             <div class="flex text-sm gap-3 mt-4">
-              <button class="flex-1 text-black/60 border-2 border-gray-300 rounded-md p-1"><i class="fa-regular fa-copy"></i> Copy</button>
-              <button class="flex-1 bg-green-500 rounded-md text-white p-1"><i class="fa-solid fa-phone"></i> Call</button>
+              <button id="brac-copy" class="flex-1 text-black/60 border-2 border-gray-300 rounded-md p-1 cursor-pointer"><i class="fa-regular fa-copy"></i> Copy</button>
+              <button class="flex-1 bg-green-500 rounded-md text-white p-1 cursor-pointer"><i class="fa-solid fa-phone"></i> Call</button>
             </div>
           </div>
 
@@ -225,12 +233,13 @@
               <p class="text-black/50 text-sm font-medium">Bangladesh Railway</p>
             </div>
             <div class="mt-4">
-              <h2 class="font-bold text-xl">163</h2>
+              <h2 id="railway-number" class="font-bold text-xl">163</h2>
               <p class="bg-gray-100 text-sm text-black/40 w-fit px-3 py-1 rounded-2xl">Travel</p>
             </div>
+            <!-- copy & call -->
             <div class="flex text-sm gap-3 mt-4">
-              <button class="flex-1 text-black/60 border-2 border-gray-300 rounded-md p-1"><i class="fa-regular fa-copy"></i> Copy</button>
-              <button class="flex-1 bg-green-500 rounded-md text-white p-1"><i class="fa-solid fa-phone"></i> Call</button>
+              <button id="railway-copy" class="flex-1 text-black/60 border-2 border-gray-300 rounded-md p-1 cursor-pointer"><i class="fa-regular fa-copy"></i> Copy</button>
+              <button class="flex-1 bg-green-500 rounded-md text-white p-1 cursor-pointer"><i class="fa-solid fa-phone"></i> Call</button>
             </div>
           </div>
         </div>
