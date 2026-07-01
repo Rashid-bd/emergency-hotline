@@ -5,7 +5,7 @@ A demo emergency service web application that allows users to quickly access imp
 ---
 
 ## 🌐 Live Demo
-👉 [View Live Project](your-live-link-here)
+👉 [View Live Project]( https://rashid-bd.github.io/emergency-hotline/)
 
 ---
 
@@ -49,4 +49,5 @@ This project was built to practice JavaScript DOM manipulation and build interac
 ---
 
 ## 📷 Screenshot
-_Add screenshot here_
+<img width="1899" height="923" alt="image" src="https://github.com/user-attachments/assets/621eed89-ab75-4dc2-8a95-b38f52656425" />
+
